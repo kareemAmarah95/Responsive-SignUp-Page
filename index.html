@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <!-- left-side -->
+        <div class="left-side">
+            <h2 class="left-side__header">Badge Registration</h2>
+
+            <form class="left-side__form" action="/action_page.php">
+                    <div class="left-side__form-holder">
+                        <input class="left-side__input" type="text" placeholder="Title">
+                        <select class="left-side__select" id="title">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs</option>
+                            <option value="miss">Miss</option>
+                            <option value="ms">Ms</option>
+                            <option value="dr">Dr</option>
+                        </select>
+                    </div>
+                <div class="left-side__parent">
+                    <input class="left-side__parent__first-half" type="text" placeholder="First Name" required>
+                    <input class="left-side__parent__second-half" type="text" placeholder="Last Name" required>
+                </div>
+                <div class="left-side__form-holder">
+                    <input class="left-side__input" type="text" placeholder="Position" required>
+                    <select class="left-side__second-select">
+                        <option value="product-owner">Product Owner</option>
+                        <option value="project-manager">Project Manager</option>
+                        <option value="ui-ux designer">Ui / Ux Designer</option>
+                        <option value="business analyst">Business Analyst</option>
+                        <option value="software developer">Software Developer</option>
+                        <option value="team-lead/tech-lead">Team Lead / Tech Lead</option>
+                        <option value="scrum master">Scrum Master</option>
+                    </select>
+                </div>
+
+                <input class="left-side__input" type="text" placeholder="Company" required>
+
+                <div class="left-side__parent">
+                    <input class="left-side__parent__first-half" type="text" placeholder="Business Arena" required>
+                    <div class="left-side__form-holder ml-15Percent">
+                        <input class="left-side__parent__employees-half" type="text" placeholder="Employees" required>
+                        <select class="left-side__third-select">
+                            <option value="it-coordinator">IT coordinator</option>
+                            <option value="computer-programmer">Computer programmer</option>
+                            <option value="technical-writer">Technical writer</option>
+                            <option value="data-analyst">Data analyst</option>
+                            <option value="application-analyst">Application analyst</option>
+                            <option value="system-analyst">Systems analyst</option>
+                        </select>
+                    </div>
+                </div>
+
+            </form>
+                
+        </div>
+    
+        <!-- right-side -->
+        <div class="right-side">
+                <div class="container">
+                    <h2 class="right-side__header">Contact Details</h2>
+                    <form class="right-side__form" action="/action_page.php">
+                        <input type="text" class="right-side__input" placeholder="Street + Nr" required>
+                        <input type="text" class="right-side__input" placeholder="Additional Information" required>
+                        
+                        <div class="right-side__parent">
+                            <input class="right-side__parent__first-half" type="text" placeholder="Zip Code" required>
+                            <input class="right-side__parent__second-half" type="text" placeholder="Place" required>
+                        </div>
+                        <input type="text" class="right-side__input" placeholder="Country">
+                        <div class="right-side__parent">
+                            <input class="right-side__parent__first-half" type="text" placeholder="Code +" required>
+                            <input class="right-side__parent__second-half" type="text" placeholder="Phone Number" required>
+                        </div>
+                        <input type="email" class="right-side__input" placeholder="Your Email" required>
+
+                        <!-- <input class="right-side__button" type="submit" value="Submit" required> -->
+                        <button class="right-side__button">Register Badge</button>
+                    </form>
+                </div>
+            
+            
+        </div> 
+
+    </main>
+</body>
+</html>
